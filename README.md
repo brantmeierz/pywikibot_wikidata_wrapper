@@ -1,6 +1,11 @@
 # pywikibot_wikidata_wrapper
 Tools to make interfacing with Wikidata using pywikibot easier.
 
+# Installation
+`pip install pywikibot`
+
+Include `user-config.py` and `user-password.py` in the same directory as your code (and update the "username" and "password" strings to match your Wikidata login.
+
 # Sample
 ```python
 import pywikibot
@@ -21,29 +26,29 @@ print(github.instance_of("Q35127")) # True
 
 # Provided structures
 ## Item
-- **__init__(wd_inst, wd_id)**
+- `__init__(wd_inst, wd_id)`
   - Creates an Item object using a given Wikidata instance (**WD_Instance**) and entity ID.
-- **claims()**
+- `claims()`
   - Returns all the claims associated with this item.
-- **claim(claim)**
+- `claim(claim)`
   - Returns the specified P-prefixed claim of this item.
-- **has_claim(claim)**
+- `has_claim(claim)`
   - Returns whether or not this item contains the specified claim.
-- **id(numeric=False)**
+- `id(numeric=False)`
   - Returns the ID of this item, default is Q-prefixed but can optionally be numeric.
-- **desc()**
+- `desc()`
   - Returns the English description of this item.
-- **label()**
+- `label()`
   - Returns the label of this item.
-- **aliases()**
+- `aliases()`
   - Returns a list of aliases this item is known by.
-- **subclass_of(entity)**
+- `subclass_of(entity)`
   - Returns whether or not this item is a subclass of the specified entity.
-- **instance_of(entity)**
+- `instance_of(entity)`
   - Returns whether or not this item is an instance of the specified entity.
 
 ## WD_Instance
-- **__init__()**
+- `__init__()`
   - Creates a WD_Instance object.
-- **get_item(name)**
+- `get_item(name)`
   - Returns an Item for the item identified by the English name provided.
