@@ -2,7 +2,7 @@
 Tools to make interfacing with Wikidata using pywikibot easier.
 
 # Sample
-```
+```python
 import pywikibot
 import pwbwrapper
 from pwbwrapper import WD_Instance
