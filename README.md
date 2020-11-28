@@ -4,7 +4,7 @@ Tools to make interfacing with Wikidata using pywikibot easier.
 # Installation
 `pip install pywikibot`
 
-Include `user-config.py` and `user-password.py` in the same directory as your code (and update the "username" and "password" strings to match your Wikidata login.
+Include `user-config.py` and `user-password.py` in the same directory as your code (and update the `"username"` and `"password"` strings to match your Wikidata login.
 
 # Sample
 ```python
@@ -27,7 +27,7 @@ print(github.instance_of("Q35127")) # True
 # Provided structures
 ## Item
 - `__init__(wd_inst, wd_id)`
-  - Creates an Item object using a given Wikidata instance (**WD_Instance**) and entity ID.
+  - Creates an **Item** object using a given Wikidata instance (**WD_Instance**) and entity ID.
 - `claims()`
   - Returns all the claims associated with this item.
 - `claim(claim)`
