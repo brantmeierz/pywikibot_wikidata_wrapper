@@ -10,9 +10,9 @@ from pwbwrapper import WD_Instance
 wd = WD_Instance()
 
 website = wd.get_item("Website")
-earth = wd.get_item("Earth")
+github = wd.get_item("GitHub")
 
-print(website)  # [Q35127 Website: set of related web pages served from a single web domain]
+print(website)  # [Q35127 website: set of related web pages served from a single web domain]
 print(github)   # [Q364 GitHub: hosting service for software projects using Git]
 print(github.instance_of(website))  # True
 ```
